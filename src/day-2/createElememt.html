@@ -1,0 +1,19 @@
+<script>
+  const h = createElement
+  render(h(
+    'div',
+    {},
+    h('h1', {}, ' this is '),
+    h(
+      'p',
+      { className: 'paragraph' },
+      ' a ',
+      h('button', {}, ' button '),
+      ' from ',
+      h('a',
+        { href: 'https://bfe.dev' },
+        h('b', {}, 'BFE'),
+        '.dev')
+    )
+  ))
+</script>
