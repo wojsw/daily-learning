@@ -79,10 +79,12 @@
 
   console.log(render(h(
     'div',
-    {className: 'paragraph'},
+    {className: 'first', url: 'https://bfe.dev'},
     h('h1', {}, ' this is '),
-    h('p', {
-      className: 'paragraph'
+    h('img', {
+      className: 'paragraph',
+      src: 'https://bfe.dev/logo.png',
+      alt: 'BFE logo'
     },
       ' a ',
     )

@@ -1,0 +1,15 @@
+<script>
+  function pipe(funcs) {
+    // your code here
+    return function (arg) {
+      return funcs.reduce((arg, func) => {
+        return func.call(this, arg)
+      }, arg)
+    }
+  }
+
+  const times = (x) => (y) => x * y
+
+  const result = pipe([times(2), times(3)])(1)
+  console.log(result);
+</script>
